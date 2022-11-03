@@ -19,7 +19,7 @@ def _clean(x, tokens):
 if __name__ == "__main__":
     """Run the parser"""
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--filename', help="The input .ipynb file.")
+    parser.add_argument('-f', '--filename', help="The input .ipynb file.", required=True)
     parser.add_argument('-e', '--out_exercise', help="Optional, where to write output exercise to.")
     parser.add_argument('-s', '--out_solution', help="Optional, where to write output solution to.")
     parser.add_argument('--token_exercise', default='#!!exercise', help="Optional, use another token to mark exercise cells in the ipynb file.")
